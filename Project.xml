@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-        <app title="FNF : Psych Engine" file="PsychEngine" packageName="com.sawsirox.psychengine" package="com.sawsirox.psychengine" main="Main" version="0.2.7" company="SawSirox" />
+        <app title="FNF : Loaff Engine" file="BakaLoaffEngine" packageName="com.loaff.engine" package="com.loaff.engine" main="Main" version="0.2.7" company="LoaffYogu" />
 	
 	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB"/> <!-- stable luas PUT AFTER FIRST LINE WITH APP NAME AND ETC -->
 
@@ -52,7 +52,6 @@
 	<define name="LUA_ALLOWED" if="desktop || mobile" />
 	<define name="VIDEO_ALLOWED" if="desktop || mobile" />
 	<define name="ACHIEVEMENTS_ALLOWED" />
-	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS ON TITLE SCREEN -->
 
 	<!-- MOBILE SHIT -->
 	<define name="mobileC" if="mobile"/>
