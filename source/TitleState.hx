@@ -522,7 +522,7 @@ class TitleState extends MusicBeatState
 					#if PSYCH_WATERMARKS
 					createCoolText(['Psych Engine by'], 15);
 					#else
-					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
+					createCoolText(['Loaff', 'YoguUHT'']);
 					#end
 				// credTextShit.visible = true;
 				case 3:
@@ -541,11 +541,7 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = 'In association \nwith';
 				// credTextShit.screenCenter();
 				case 5:
-					#if PSYCH_WATERMARKS
-					createCoolText(['Not associated', 'with'], -40);
-					#else
-					createCoolText(['In association', 'with'], -40);
-					#end
+					createCoolText(['Not associated', 'with'], -40)
 				case 7:
 					addMoreText('newgrounds', -40);
 					ngSpr.visible = true;
@@ -590,6 +586,18 @@ class TitleState extends MusicBeatState
 		if (!skippedIntro)
 		{
 			remove(ngSpr);
+
+			FlxTween.tween(logoBl,{x: 200}, 1.4, {ease: FlxEase.expoInOut});
+
+			logoBl.angle = -4.5;
+
+			new FlxTimer().start(0.0001, function(tmr:FlxTimer)
+				{
+					if(logoBl.angle == -4.5) 
+						FlxTween.angle(logoBl, logoBl.angle, 4.5, 4.5, {ease: FlxEase.quartInOut});
+					if (logoBl.angle == 4.5) 
+						FlxTween.angle(logoBl, logoBl.angle, -4.5, 4.5, {ease: FlxEase.quartInOut});
+				}, 0);
 
 			FlxG.camera.flash(FlxColor.WHITE, 4);
 			remove(credGroup);
