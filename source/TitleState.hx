@@ -527,7 +527,7 @@ class TitleState extends MusicBeatState
 					#if PSYCH_WATERMARKS
 					createCoolText(['Psych Engine by'], 15);
 					#else
-					createCoolText(['Loaff', 'YoguUHT']);
+					createCoolText(['SoftDream', 'DrackDream', 'PumpDream']);
 					#end
 				// credTextShit.visible = true;
 				case 3:
@@ -591,8 +591,6 @@ class TitleState extends MusicBeatState
 		if (!skippedIntro)
 		{
 			remove(ngSpr);
-
-			FlxTween.tween(logoBl,{x: 200}, 1.4, {ease: FlxEase.expoInOut});
 
 			logoBl.angle = -4.5;
 
