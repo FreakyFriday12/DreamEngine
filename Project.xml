@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-        <app title="FNF : Loaff Engine" file="BakaLoaffEngine" packageName="com.loaff.engine" package="com.loaff.engine" main="Main" version="0.2.7" company="LoaffYogu" />
+        <app title="FNF : Dream Engine" file="DreamEngineDataHere" packageName="com.dream.engine" package="com.dream.engine" main="Main" version="0.2.7" company="Dreams" />
 	
 	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB"/> <!-- stable luas PUT AFTER FIRST LINE WITH APP NAME AND ETC -->
 
