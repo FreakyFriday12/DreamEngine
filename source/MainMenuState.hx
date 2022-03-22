@@ -133,7 +133,7 @@ class MainMenuState extends MusicBeatState
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-                var versionShit:FlxText = new FlxText(12, FlxG.height - 64, 0, "Loaff Engine v0.1.1", 12);
+                var versionShit:FlxText = new FlxText(12, FlxG.height - 64, 0, "Dream Engine v0.1.4 BETA", 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
