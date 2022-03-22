@@ -46,7 +46,7 @@ class VisualsUISubState extends BaseOptionsMenu
                         'scoreType',
                         'string',
                         'Kade Engine',
-                        ['Psych Engine', 'Kade Engine', 'Disabled']);
+                        ['Psych Engine', 'Kade Engine']);
                 addOption(option);
 
 		var option:Option = new Option('Memory Counter',
@@ -99,13 +99,6 @@ class VisualsUISubState extends BaseOptionsMenu
                         'bool',
                         true);
                 addOption(option);
-
-		var option:Option = new Option('Dynamic Cam',
-                        'If checked, enables dynamic cam movement, only works on vanilla FNF!.',
-                        'dynamicCam',
-                        'bool',
-                        false);
-                addOption(option);
 		
 		var option:Option = new Option('Play Hit Sounds',
                         'If checked enables hit sounds.',
@@ -125,14 +118,14 @@ class VisualsUISubState extends BaseOptionsMenu
                         'If checked, uses the KE timebar.',
                         'keTimeBar',
                         'bool',
-                        false);
+                        true);
                 addOption(option);
 
 		var option:Option = new Option('Score Text Zoom on Hit',
 			"If unchecked, disables the Score text zooming\neverytime you hit a note.",
 			'scoreZoom',
 			'bool',
-			true);
+			false);
 		addOption(option);
 		var option:Option = new Option('Health Bar Opacity',
 			'How Opaque should the health bar and icons be.',
